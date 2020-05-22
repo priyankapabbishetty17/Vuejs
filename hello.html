@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+
+<div id="app">
+    <!-- string interpolation technique -->
+    <h1>{{greeting}}</h1> 
+</div>
+
+
+<!-- load jquery without downloading its files -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script> -->
+
+<!-- setup for vuejs -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+
+<script>
+// document.getElementById("greeting").innerText='Hello from vanilla javascript';
+// $('#greeting').text('Hello from jquery!');
+    new Vue({
+        el: '#app',
+        data: {
+            greeting: 'Hello from Vue!'
+        }
+    });
+</script>

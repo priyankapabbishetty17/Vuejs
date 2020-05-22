@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<!-- load bootstrap css properties -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+<div id="app">
+    <div class="container">
+        <form class="mt-5">
+            <div class="form-group">
+                <!-- responsive field w.r.t size due to bootstrap properties -->
+                <label for="email">Email</label>
+                <input type="email" class="form-control form-control-lg">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>
+<!-- load files of vuejs -->
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.11"></script>
+<script>
+    // vue js instance is mounted on element app
+    new Vue({
+        el: '#app',
+        data: {
+               
+        }
+    });
+</script>
